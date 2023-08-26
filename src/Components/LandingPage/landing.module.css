@@ -1,0 +1,137 @@
+.landingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--color-black);
+  width: 1135px;
+  margin: 0 auto;
+}
+
+.heading {
+  color: var(--pure-white, #fff);
+  font-family: Inter;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147.523%; /* 97.365px */
+  font-family: "Inter", sans-serif;
+}
+
+.heading2 {
+  color: var(--pure-white, #fff);
+  font-family: "Inter", sans-serif;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 147.523%;
+}
+
+.subheading {
+  width: 560px;
+  height: 99px;
+  flex-shrink: 0;
+  color: var(--pure-white, #fff);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 162.523%; /* 29.254px */
+  opacity: 0.3;
+}
+
+.HeroImage {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 443.511px;
+  height: 509.069px;
+  flex-shrink: 0;
+  margin-left: 52px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.searchInput {
+  width: 438px;
+  height: 74px;
+  flex-shrink: 0;
+  padding: 20px;
+  background-image: url("../../Assets/Message.png");
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+  border: none;
+  border-radius: 43px;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  padding: 20px 20px 20px 40px; /* Adjust padding to create space */
+}
+
+/* .logoPlaceholder {
+  background-image: url("../../Assets/Message.png");
+  background-color: #999;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+} */
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+.button {
+  padding: 15px 30px;
+  width: 137px;
+  height: 62px;
+  flex-shrink: 0;
+  background-color: #e3b748;
+  color: var(--color-black);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 162.523%;
+  position: relative;
+  right: 140px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .landingContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+  }
+
+  .HeroImage {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .searchBar {
+    margin-top: 20px;
+  }
+
+  .button {
+    position: static; /* Reset position for smaller screens */
+    margin-top: 20px; /* Add margin to adjust spacing */
+  }
+}
